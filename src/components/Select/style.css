@@ -1,0 +1,74 @@
+/* Wrapper for custom select */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-wrapper.primary {
+    background-color: #3b82f6;
+    color: white;
+    border: 1px solid #3b82f6;
+}
+
+.select-wrapper.secondary {
+    background-color: #6b7280;
+    color: white;
+    border: 1px solid #6b7280;
+}
+
+.select-wrapper.disabled {
+    background-color: #d1d5db;
+    color: #9ca3af;
+    cursor: not-allowed;
+    border-color: #9ca3af;
+}
+
+.custom-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease;
+}
+
+.custom-options.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.custom-option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-option:hover {
+    background-color: #f3f4f6;
+}
+
+.custom-option.selected {
+    background-color: #e0f2fe;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.option-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+/* Style for options with icons */
+.custom-options.with-icons .custom-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

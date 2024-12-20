@@ -1,0 +1,61 @@
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    text-decoration: none;
+}
+
+.site-name h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    gap: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.header-button:hover {
+    transform: scale(1.1);
+    color: #007bff;
+}
+
+.header-button:active {
+    transform: scale(0.95);
+}
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-item-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+}
